@@ -226,9 +226,10 @@ function App() {
 
   return (
     <Routes>
+      <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="/login" element={<LoginPage />} />
       <Route element={<><Navbar /><main className="journal-wrap"><Outlet /></main></>}>
-        <Route index element={<HomePage destinations={destinations} />} />
+        <Route path="home" element={<HomePage destinations={destinations} />} />
         <Route path="countries" element={<DestinationsListPage destinations={destinations} onAdd={addDestination} />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="profile" element={<ProfilPage destinations={destinations} />} />

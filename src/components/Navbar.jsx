@@ -4,7 +4,7 @@ export default function Navbar() {
   const navigate = useNavigate()
   const location = useLocation()
   const items = [
-    ['/', 'fa-passport', 'My Passport'],
+    ['/home', 'fa-passport', 'My Passport'],
     ['/countries', 'fa-globe', 'Countries'],
     ['/about', 'fa-circle-info', 'About'],
     ['/profile', 'fa-user', 'Profile'],
@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <header className="topbar">
-      <button className="brand-mark" onClick={() => navigate('/')} aria-label="PassTounsi home">
+      <button className="brand-mark" onClick={() => navigate('/home')} aria-label="PassTounsi home">
         <i className="fa-solid fa-plane" aria-hidden="true" /><span>PassTounsi</span>
       </button>
       <nav aria-label="Main navigation">

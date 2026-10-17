@@ -13,7 +13,7 @@ export default function LoginPage() {
         <div className="login-flight-path" aria-hidden="true">〰 ✈</div>
       </section>
       <section className="login-panel">
-        <form className="login-card" onSubmit={(event) => { event.preventDefault(); navigate('/') }}>
+        <form className="login-card" onSubmit={(event) => { event.preventDefault(); navigate('/home') }}>
           <img className="login-flag" src="/images/Tunisie.jpg" alt="Tunisian flag" />
           <p className="login-kicker">YOUR DIGITAL TRAVEL PASSPORT</p>
           <h1>Welcome to PassTounsi! <span aria-hidden="true">✈️</span></h1>

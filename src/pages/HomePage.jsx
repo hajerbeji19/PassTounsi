@@ -7,7 +7,7 @@ export default function HomePage({ destinations }) {
   const navigate = useNavigate()
 
   function openCountryPages() {
-    setShowDestinations(true)
+    navigate('/countries')
   }
 
   if (showProfile && !showDestinations) {

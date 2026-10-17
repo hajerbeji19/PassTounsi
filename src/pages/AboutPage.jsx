@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <section className="content-page about-page page-no-scroll">
+    <section className="content-page about-page">
       <span className="step-pill">ABOUT PASSTOUNSI</span>
       <h1>Every page,<br /><em>a new adventure.</em></h1>
       <p className="content-lead">PassTounsi is your digital travel passport: a personal place to collect the countries you visit, remember the people you travel with and keep the stories behind every journey.</p>

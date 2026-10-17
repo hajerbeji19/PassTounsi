@@ -101,6 +101,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
 .profile-cta { margin-top: 22px; }
 
 .index-page { padding: 2px 6px; }
+.destinations-list-page { min-height: calc(100vh - 134px); overflow: visible; }
 .index-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin: 7px 0 26px; }
 .index-heading h1 { margin: 12px 0 4px; color: var(--green-dark); font: 600 34px 'Playfair Display', serif; }
 .index-heading h1 i { margin-right: 8px; color: var(--green); }
@@ -117,6 +118,12 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
 .destination-card { min-width: 0; overflow: hidden; border: 1px solid #e3e7e0; border-radius: 9px; padding: 0; background: #fff; color: inherit; text-align: left; box-shadow: 0 3px 9px #25362608; transition: transform .2s, box-shadow .2s; }
 .destination-card:hover { transform: translateY(-3px); box-shadow: 0 9px 19px #25362616; }
 .card-image { height: 150px; position: relative; overflow: hidden; background: #e5e6df; }
+.card-airport-stamp { top: 8px; right: 8px; width: 78px; height: 78px; border-width: 2px; gap: 1px; }
+.card-airport-stamp::before { inset: 3px; }
+.card-airport-stamp>span { font-size: 6px; letter-spacing: .7px; }
+.card-airport-stamp strong { font-size: 9px; }
+.card-airport-stamp>i { font-size: 11px; }
+.card-airport-stamp small { font-size: 5px; }
 .card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
 .destination-card:hover .card-image img { transform: scale(1.04); }
 .status-badge { position: absolute; bottom: 10px; left: 10px; border-radius: 20px; padding: 6px 10px; background: #fffef1ed; color: var(--green); font-size: 11px; font-weight: 700; }
@@ -255,6 +262,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-
 .detail-not-found p { margin: 0 0 22px; color: var(--muted); font-size: 15px; }
 
 .content-page { max-width: 920px; min-height: 580px; margin: 0 auto; padding: 38px clamp(18px, 5vw, 55px); }
+.about-page { min-height: calc(100vh - 134px); overflow: visible; }
 .content-page>h1 { margin: 20px 0 15px; color: var(--green-dark); font: 500 clamp(42px, 6vw, 65px)/1.03 'Playfair Display', serif; letter-spacing: -1px; }
 .content-page>h1 em { color: var(--red); }
 .content-lead { max-width: 690px; color: #67766b; font: 17px/1.75 'DM Sans', sans-serif; }
